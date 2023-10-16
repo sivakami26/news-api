@@ -15,5 +15,5 @@ for article in content["articles"]:
     message = message + article["title"] + "\n" + article["description"] + 2*"\n"
 
 message_bytes = message.encode('utf-8')
-send_email.send_email(message)
+send_email.send_email(message_bytes)
 print("Email alert is sent out successfully")
